@@ -1,0 +1,13 @@
+# Local paths. This file is meant to be edited on each machine.
+# The repository does not download sequences or checkpoints.
+
+# Root of the Cattle4DGS sequence layout described in README.md.
+data_root: /path/to/cattle4d_sequences
+
+# Optional checkout or extract of MmCows (Vu et al., NeurIPS 2024).
+# Used only by cattle4d.data.mmcows once that adapter is implemented.
+mmcows_root: /path/to/mmcows
+
+# Directory where a future training run may write logs. Nothing is written
+# until the training step is implemented.
+output_dir: outputs

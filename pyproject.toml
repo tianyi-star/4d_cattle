@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cattle4dgs"
+version = "0.1.0"
+description = "Research framework for 4D Gaussian Splatting of bovine gait."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Bo" }]
+keywords = ["4dgs", "gaussian-splatting", "cattle", "gait", "computer-vision"]
+
+[project.urls]
+Homepage = "https://github.com/tianyi-star/4d_cattle"
+
+[tool.setuptools.packages.find]
+where = ["src"]

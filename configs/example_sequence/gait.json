@@ -1,0 +1,7 @@
+{
+  "cow_id": "C01",
+  "note": "Schema sample. Replace names with the labels used in the study.",
+  "labels": [
+    {"frame": 0, "timestamp": 0.0, "name": "walking"}
+  ]
+}
