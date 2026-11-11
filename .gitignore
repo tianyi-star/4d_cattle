@@ -1,18 +1,36 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Other files and folders
-.settings/
+# Environments
+.venv/
+venv/
+env/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Experiment artifacts. Checkpoints are produced locally and are not part of
+# this repository.
+outputs/
+runs/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.ply
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Local data. Sequences are documented in README.md and are not redistributed.
+data/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+.ipynb_checkpoints/

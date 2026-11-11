@@ -1,0 +1,40 @@
+# Placeholder experiment configuration.
+# Values marked null must be chosen for a concrete study. They are not the
+# outcome of a hyperparameter search, and this repository reports no metrics.
+
+seed: 0
+device: cuda
+
+data:
+  # Spatial size used when a loader resizes views. Native camera resolution
+  # stays in cameras.yaml.
+  image_height: 512
+  image_width: 512
+  num_views: 4
+  # Number of observed frames per window. Set this from the captured rate.
+  sequence_length: null
+
+model:
+  coat_embed_dim: 256
+  gaussian:
+    # Degree of spherical harmonics once an appearance model is filled in.
+    sh_degree: 3
+    # Canonical Gaussian count is data-dependent. Leave unset.
+    init_points: null
+  deformation:
+    hidden_dim: 256
+    num_layers: 4
+  denoiser:
+    hidden_dim: 128
+  generator:
+    # Observed frames passed to the generator, and frames to forecast.
+    history: null
+    horizon: null
+  recognizer:
+    # Filled from the annotation protocol, for example gait-phase names.
+    labels: []
+
+optim:
+  lr: null
+  epochs: null
+  batch_size: 1

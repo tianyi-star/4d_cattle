@@ -1,0 +1,29 @@
+# Schema sample for one walking sequence. Replace every number with a
+# calibration of the capture rig. These values are not a real barn calibration.
+fps: 1.0
+cameras:
+  cam00:
+    width: 640
+    height: 480
+    K:
+      - [500.0, 0.0, 320.0]
+      - [0.0, 500.0, 240.0]
+      - [0.0, 0.0, 1.0]
+    # Camera-to-world rigid transform, 4x4, row-major.
+    c2w:
+      - [1.0, 0.0, 0.0, 0.0]
+      - [0.0, 1.0, 0.0, 0.0]
+      - [0.0, 0.0, 1.0, 5.0]
+      - [0.0, 0.0, 0.0, 1.0]
+  cam01:
+    width: 640
+    height: 480
+    K:
+      - [500.0, 0.0, 320.0]
+      - [0.0, 500.0, 240.0]
+      - [0.0, 0.0, 1.0]
+    c2w:
+      - [0.0, 0.0, 1.0, 5.0]
+      - [0.0, 1.0, 0.0, 0.0]
+      - [-1.0, 0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0, 1.0]
