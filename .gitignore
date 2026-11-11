@@ -24,8 +24,9 @@ checkpoints/
 *.ckpt
 *.ply
 
-# Local data. Sequences are documented in README.md and are not redistributed.
-data/
+# Local captures at the repository root. The Python package under
+# src/cattle4d/data/ is source and must stay tracked.
+/data/
 
 # OS and editor files
 .DS_Store
